@@ -219,9 +219,14 @@ export default function Home() {
           <h2 className="text-5xl font-light mb-8">Ready to Start Your Coffee Journey?</h2>
           <p className="text-2xl mb-16 text-gray-100 font-light">Join thousands of coffee enthusiasts who are already using CoffeeLite.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="ios-button text-lg px-16 py-5 bg-white text-primary hover:bg-gray-100">
-              Download Now
-            </button>
+            <a
+              href="https://testflight.apple.com/join/AZuAmmFb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ios-button text-lg px-16 py-5 bg-white text-primary hover:bg-gray-100 text-center"
+            >
+              Download on TestFlight
+            </a>
             <button className="ios-button text-lg px-16 py-5 bg-white/10 backdrop-blur-sm hover:bg-white/20">
               Learn More
             </button>
