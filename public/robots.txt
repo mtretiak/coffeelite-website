@@ -1,0 +1,19 @@
+# Global rules
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+# Allow Google Images to index images
+User-agent: Googlebot-Image
+Allow: /IMG_*.png
+Allow: /icon-*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+
+# Sitemap
+Sitemap: https://coffeelite-website-jlpu.vercel.app/sitemap.xml 

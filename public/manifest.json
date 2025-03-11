@@ -1,0 +1,41 @@
+{
+  "name": "CoffeeLite - Simple Coffee Journal & Tracking App",
+  "short_name": "CoffeeLite",
+  "description": "Track your daily coffee consumption effortlessly with CoffeeLite. Get insights into your coffee habits and monitor weekly stats.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3f2",
+  "theme_color": "#261b18",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/IMG_6411.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "platform": "ios",
+      "label": "CoffeeLite Home Screen"
+    }
+  ],
+  "categories": ["lifestyle", "food", "health"],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "ios",
+      "url": "https://testflight.apple.com/join/AZuAmmFb"
+    }
+  ]
+} 
