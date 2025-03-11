@@ -6,6 +6,7 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://coffeelite-website-jlpu.vercel.app'),
   title: 'CoffeeLite - Your Perfect Coffee Journal',
   description: 'Track your brews, manage your coffee collection, and discover your perfect cup with CoffeeLite.',
   keywords: 'coffee, journal, brewing, tracking, iOS app, coffee app, coffee tracking, brewing journal',
