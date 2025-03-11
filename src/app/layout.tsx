@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://coffeelite-website-jlpu.vercel.app'),
-  title: 'CoffeeLite - Coffee Brewing Journal & Recipe Tracker for iOS',
+  title: 'Last Notes - Coffee Brewing Journal & Recipe Tracker for iOS',
   description: 'Track your coffee brewing recipes, save detailed parameters, and perfect your coffee making process. Log origins, flavor notes, and brewing methods in this simple iOS app for coffee enthusiasts.',
   keywords: 'coffee journal, coffee recipe tracker, coffee brewing app, coffee parameters, pour over coffee, V60 coffee, coffee brewing journal, coffee logging app, coffee tasting notes, coffee origin tracker',
-  applicationName: 'CoffeeLite',
-  authors: [{ name: 'CoffeeLite Team' }],
-  creator: 'CoffeeLite Team',
-  publisher: 'CoffeeLite',
+  applicationName: 'Last Notes',
+  authors: [{ name: 'Last Notes Team' }],
+  creator: 'Last Notes Team',
+  publisher: 'Last Notes',
   formatDetection: {
     telephone: true,
     date: true,
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   },
   category: 'lifestyle',
   openGraph: {
-    title: 'CoffeeLite - Coffee Brewing Journal & Recipe Tracker',
+    title: 'Last Notes - Coffee Brewing Journal & Recipe Tracker',
     description: 'Track your coffee brewing recipes, save detailed parameters, and perfect your coffee making process. From bean origins to brewing parameters, capture every detail.',
     type: 'website',
     locale: 'en_US',
     url: 'https://coffeelite-website-jlpu.vercel.app',
-    siteName: 'CoffeeLite',
+    siteName: 'Last Notes',
     images: [
       {
         url: '/IMG_6411.png',
@@ -39,23 +39,28 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CoffeeLite - Coffee Brewing Journal & Recipe Tracker',
+    title: 'Last Notes - Coffee Brewing Journal & Recipe Tracker',
     description: 'Track your coffee brewing recipes and perfect your coffee making process. Log origins, parameters, and flavor notes.',
-    site: '@coffeelite',
-    creator: '@coffeelite',
+    site: '@lastnotes',
+    creator: '@lastnotes',
     images: ['/IMG_6411.png'],
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon.png', type: 'image/png' },
+      { url: '/coffee-icon.png', type: 'image/png' },
+      { url: '/coffee-icon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/coffee-icon.png', type: 'image/png', sizes: '16x16' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png' },
-      { url: '/apple-touch-icon-72x72.png', sizes: '72x72', type: 'image/png' },
-      { url: '/apple-touch-icon-114x114.png', sizes: '114x114', type: 'image/png' },
-      { url: '/apple-touch-icon-152x152.png', sizes: '152x152', type: 'image/png' },
+      { url: '/coffee-icon.png', type: 'image/png' },
+      { url: '/coffee-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/coffee-icon.png', sizes: '152x152', type: 'image/png' },
+      { url: '/coffee-icon.png', sizes: '120x120', type: 'image/png' },
+      { url: '/coffee-icon.png', sizes: '76x76', type: 'image/png' },
     ],
+    other: [
+      { rel: 'mask-icon', url: '/coffee-icon.png', color: '#261b18' }
+    ]
   },
   manifest: '/manifest.json',
   robots: {
@@ -92,7 +97,7 @@ export const metadata: Metadata = {
   ],
   appleWebApp: {
     capable: true,
-    title: 'CoffeeLite',
+    title: 'Last Notes',
     statusBarStyle: 'default',
   },
   other: {
