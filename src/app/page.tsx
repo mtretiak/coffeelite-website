@@ -118,22 +118,22 @@ export default function Home() {
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
         <section 
-          className="relative min-h-[90vh] flex items-center bg-primary-50"
+          className="relative min-h-[90vh] flex items-center bg-primary-50 py-12 md:py-0"
           aria-label="Introduction to CoffeeLite"
         >
           <div className="container-lg relative z-10">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="max-w-2xl"
+                className="max-w-2xl px-4 md:px-0"
               >
-                <h1 className="text-display-lg font-bold mb-6 text-balance">
+                <h1 className="text-4xl md:text-display-lg font-bold mb-6 text-balance">
                   Your perfect
                   <span className="text-gradient"> coffee journal</span>
                 </h1>
-                <p className="text-xl text-secondary-600 mb-8 text-balance">
+                <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
                   Track your brews, discover new recipes, and perfect your coffee journey with Last Notes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -141,25 +141,25 @@ export default function Home() {
                     href="https://testflight.apple.com/join/AZuAmmFb"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ios-button-primary"
+                    className="ios-button-primary text-center"
                   >
                     Download Beta
                   </a>
                 </div>
               </motion.div>
-              <div className="relative flex justify-center">
+              <div className="relative flex justify-center px-4 md:px-0">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8 }}
-                  className="relative w-[1000px]"
+                  className="relative w-full max-w-[1000px]"
                 >
                   <Image
                     src="/coffee-journal.png"
                     alt="CoffeeLite app screens showing coffee journal entries"
                     width={1000}
                     height={600}
-                    className="object-contain"
+                    className="object-contain w-full h-auto"
                     priority
                   />
                 </motion.div>
@@ -170,20 +170,20 @@ export default function Home() {
 
         {/* Features Section */}
         <section 
-          className="ios-section bg-white"
+          className="ios-section bg-white py-12 md:py-24"
           aria-label="CoffeeLite Features"
         >
-          <div className="container-lg">
-            <div className="text-center mb-16">
-              <h2 className="text-display-sm font-bold mb-6 text-balance">
+          <div className="container-lg px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
                 Craft the perfect cup,
                 <span className="text-gradient"> every time</span>
               </h2>
-              <p className="text-xl text-secondary-600 max-w-2xl mx-auto text-balance">
+              <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto text-balance">
                 Everything you need to elevate your coffee experience, right at your fingertips.
               </p>
             </div>
-            <div className="feature-grid">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -235,26 +235,27 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="flex justify-center"
+              className="flex justify-center mt-12 md:mt-16 px-4 md:px-0"
             >
               <Image
                 src="/coffee-journal-group.png"
                 alt="CoffeeLite detailed features showcase"
                 width={800}
                 height={400}
+                className="w-full h-auto max-w-[800px]"
               />
             </motion.div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="ios-section bg-primary-50">
-          <div className="container-sm text-center">
-            <h2 className="text-display-sm font-bold mb-6 text-balance">
+        <section className="ios-section bg-primary-50 py-12 md:py-24">
+          <div className="container-sm text-center px-4 md:px-6">
+            <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
               Start your coffee
               <span className="text-gradient"> journey today</span>
             </h2>
-            <p className="text-xl text-secondary-600 mb-8 text-balance">
+            <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
               Join thousands of coffee enthusiasts who are already using Last Notes to perfect their brew.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -262,7 +263,7 @@ export default function Home() {
                 href="https://testflight.apple.com/join/AZuAmmFb"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ios-button-primary"
+                className="ios-button-primary text-center"
               >
                 Download Beta
               </a>
@@ -271,15 +272,15 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section className="ios-section bg-white" aria-label="Frequently Asked Questions">
-          <div className="container-lg">
-            <div className="text-center mb-16">
-              <h2 className="text-display-sm font-bold mb-6 text-balance">
+        <section className="ios-section bg-white py-12 md:py-24" aria-label="Frequently Asked Questions">
+          <div className="container-lg px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
                 Frequently Asked
                 <span className="text-gradient"> Questions</span>
               </h2>
             </div>
-            <div className="grid gap-8 max-w-3xl mx-auto">
+            <div className="grid gap-6 md:gap-8 max-w-3xl mx-auto">
               <div className="ios-card">
                 <h3 className="text-xl font-semibold mb-3">What is Last Notes?</h3>
                 <p className="text-secondary-600">Last Notes is a simple iOS app that helps you track your daily coffee consumption, providing insights into your coffee drinking habits and weekly statistics.</p>
@@ -301,13 +302,13 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="ios-section bg-primary-50" aria-label="Contact and Support">
-          <div className="container-sm text-center">
-            <h2 className="text-display-sm font-bold mb-6 text-balance">
+        <section className="ios-section bg-primary-50 py-12 md:py-24" aria-label="Contact and Support">
+          <div className="container-sm text-center px-4 md:px-6">
+            <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
               Need
               <span className="text-gradient"> help?</span>
             </h2>
-            <p className="text-xl text-secondary-600 mb-8 text-balance">
+            <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
               We're here to assist you with any questions or concerns about Last Notes.
             </p>
             <div className="ios-card max-w-xl mx-auto">
@@ -335,9 +336,9 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-white py-12 px-4">
+        <footer className="bg-white py-12 px-4 md:px-6">
           <div className="container-lg">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <h3 className="font-semibold mb-4">Last Notes</h3>
                 <p className="text-sm text-secondary-600">Your perfect coffee companion for tracking and improving your coffee journey.</p>
