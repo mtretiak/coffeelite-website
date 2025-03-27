@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -134,17 +135,18 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "CoffeeLite",
+              "name": "Last Notes",
               "url": "https://coffeelite-website-jlpu.vercel.app",
-              "logo": "https://coffeelite-website-jlpu.vercel.app/icon.png",
+              "logo": "https://coffeelite-website-jlpu.vercel.app/coffee-icon.png",
               "sameAs": [
-                "https://twitter.com/coffeelite",
-                "https://instagram.com/coffeelite"
+                "https://twitter.com/lastnotes",
+                "https://instagram.com/lastnotes"
               ]
             }
           `}
         </Script>
         {children}
+        <Analytics />
       </body>
     </html>
   );
