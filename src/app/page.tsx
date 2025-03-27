@@ -10,6 +10,8 @@ export const revalidate = 86400 // revalidate every 24 hours
 
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHeroImageLoading, setIsHeroImageLoading] = useState(true);
+  const [isFeatureImageLoading, setIsFeatureImageLoading] = useState(true);
   const images = [
     { src: '/IMG_6411.png', alt: 'CoffeeLite Home Screen' },
     { src: '/IMG_6412.png', alt: 'CoffeeLite Brewing Screen' },
@@ -160,12 +162,11 @@ export default function Home() {
                     alt="Last Notes app screens showing coffee journal entries"
                     width={1000}
                     height={600}
-                    className="object-contain w-full h-auto"
+                    className={`object-contain w-full h-auto ${isHeroImageLoading ? 'shimmer' : ''}`}
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1000px"
                     quality={90}
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="
+                    onLoadingComplete={() => setIsHeroImageLoading(false)}
                   />
                 </motion.div>
               </div>
@@ -243,16 +244,15 @@ export default function Home() {
               className="flex justify-center mt-12 md:mt-16 px-4 md:px-0"
             >
               <Image
-                src="/coffee-journal-group.png"
+                src="/coffee-journal-group.webp"
                 alt="Last Notes detailed features showcase"
                 width={800}
                 height={400}
-                className="w-full h-auto max-w-[800px]"
+                className={`w-full h-auto max-w-[800px] ${isFeatureImageLoading ? 'shimmer' : ''}`}
                 sizes="(max-width: 800px) 100vw, 800px"
                 quality={85}
                 loading="lazy"
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="
+                onLoadingComplete={() => setIsFeatureImageLoading(false)}
               />
             </motion.div>
           </div>
