@@ -141,12 +141,12 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://testflight.apple.com/join/AZuAmmFb"
+                    href="https://apps.apple.com/ca/app/last-notes/id6742664033"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ios-button-primary text-center"
+                    className="ios-button-primary"
                   >
-                    Download Beta
+                    Download on App Store
                   </a>
                 </div>
               </motion.div>
@@ -270,12 +270,12 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://testflight.apple.com/join/AZuAmmFb"
+                href="https://apps.apple.com/ca/app/last-notes/id6742664033"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ios-button-primary text-center"
+                className="ios-button-primary"
               >
-                Download Beta
+                Download on App Store
               </a>
             </div>
           </div>
