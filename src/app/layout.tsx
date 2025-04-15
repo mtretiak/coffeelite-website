@@ -139,8 +139,7 @@ export default function RootLayout({
               "url": "https://coffeelite-website-jlpu.vercel.app",
               "logo": "https://coffeelite-website-jlpu.vercel.app/coffee-icon.png",
               "sameAs": [
-                "https://twitter.com/lastnotes",
-                "https://instagram.com/lastnotes"
+                "https://www.instagram.com/lastnotesapp/"
               ]
             }
           `}

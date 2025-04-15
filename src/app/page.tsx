@@ -332,10 +332,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
                   <div className="flex justify-center gap-4">
-                    <a href="https://twitter.com/coffeelite" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">
-                      Twitter
-                    </a>
-                    <a href="https://instagram.com/coffeelite" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">
+                    <a href="https://www.instagram.com/lastnotesapp/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">
                       Instagram
                     </a>
                   </div>
@@ -379,10 +376,7 @@ export default function Home() {
                 <h3 className="font-semibold mb-4">Follow Us</h3>
                 <ul className="space-y-2">
                   <li>
-                    <a href="https://twitter.com/coffeelite" target="_blank" rel="noopener noreferrer" className="text-sm text-secondary-600 hover:text-primary-600">Twitter</a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/coffeelite" target="_blank" rel="noopener noreferrer" className="text-sm text-secondary-600 hover:text-primary-600">Instagram</a>
+                    <a href="https://www.instagram.com/lastnotesapp/" target="_blank" rel="noopener noreferrer" className="text-sm text-secondary-600 hover:text-primary-600">Instagram</a>
                   </li>
                 </ul>
               </div>
