@@ -183,10 +183,10 @@ export default function Home() {
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
                 Everything connects
-                <span className="text-gradient"> back to the bag</span>
+                <span className="text-gradient"> back to the bag.</span>
               </h2>
               <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto text-balance">
-                Your beans, your brews, your tasting notes — all in one place so you can repeat what works.
+                Start with the bean. Build from there.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -273,11 +273,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               <blockquote className="ios-card">
                 <p className="text-secondary-700 italic mb-4">&ldquo;Finally I can remember what I did when a cup turns out great. Game changer for dialing in new beans.&rdquo;</p>
-                <footer className="text-sm text-secondary-600">— James, V60 home brewer</footer>
+                <footer className="text-sm text-secondary-600">— James, home brewer</footer>
               </blockquote>
               <blockquote className="ios-card">
                 <p className="text-secondary-700 italic mb-4">&ldquo;The bag tracking is exactly what I needed. No more guessing which grind setting worked for that Ethiopian.&rdquo;</p>
-                <footer className="text-sm text-secondary-600">— Sarah, pour-over enthusiast</footer>
+                <footer className="text-sm text-secondary-600">— Sarah, espresso dialer</footer>
               </blockquote>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function Home() {
               <span className="text-gradient"> a great cup</span>
             </h2>
             <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
-              Your coffee memory starts here. Download Last Notes and start logging.
+              Free on iOS. No spreadsheets required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -313,10 +313,7 @@ export default function Home() {
               Need
               <span className="text-gradient"> help?</span>
             </h2>
-            <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
-              We're here to assist you with any questions or concerns about Last Notes.
-            </p>
-            <div className="ios-card max-w-xl mx-auto">
+            <div className="ios-card max-w-xl mx-auto mt-8">
               <div className="flex flex-col gap-6">
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Email Support</h3>
