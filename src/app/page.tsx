@@ -32,7 +32,7 @@ export default function Home() {
       {
         "@type": "MobileApplication",
         "name": "CoffeeLite",
-        "description": "Track your daily coffee consumption effortlessly with CoffeeLite. Get insights into your coffee habits, monitor weekly stats, and improve your coffee journey.",
+        "description": "Log each bag, track what works, and never lose a winning recipe again. Last Notes helps you record origins, brew parameters, and tasting notes so you can repeat your best cups.",
         "operatingSystem": "iOS",
         "applicationCategory": "LifestyleApplication",
         "offers": {
@@ -46,9 +46,9 @@ export default function Home() {
           "caption": img.alt
         })),
         "featureList": [
-          "Quick coffee consumption logging",
-          "Daily coffee intake insights",
-          "Weekly statistics tracking"
+          "Bag tracking with origin and roast date",
+          "Brew parameters (grind, temp, ratio, method)",
+          "Tasting notes to capture winning recipes"
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -66,7 +66,7 @@ export default function Home() {
             "name": "What is CoffeeLite?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CoffeeLite is a simple iOS app that helps you track your daily coffee consumption, providing insights into your coffee drinking habits and weekly statistics."
+              "text": "Last Notes is a coffee journal app that helps you log each bag, record brew parameters, and capture tasting notes—so you never lose a winning recipe again."
             }
           },
           {
@@ -82,7 +82,7 @@ export default function Home() {
             "name": "What features does CoffeeLite offer?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CoffeeLite offers quick coffee consumption logging, daily insights into your coffee intake patterns, and detailed weekly statistics to track your coffee drinking habits."
+              "text": "Last Notes offers bag tracking with origin and roast date, brew parameter logging (grind, temp, ratio, method), and tasting notes to capture what worked so you can repeat it."
             }
           }
         ]
@@ -133,15 +133,15 @@ export default function Home() {
                 className="max-w-2xl px-4 md:px-0"
               >
                 <h1 className="text-4xl md:text-display-lg font-bold mb-6 text-balance">
-                  Your perfect
-                  <span className="text-gradient"> coffee journal</span>
+                  You made a great cup last week.
+                  <span className="text-gradient"> You have no idea what you did.</span>
                 </h1>
                 <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
-                  Track your brews, discover new recipes, and perfect your coffee journey with Last Notes.
+                  Log each bag, track what works, and never lose a winning recipe again.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://apps.apple.com/ca/app/last-notes/id6742664033"
+                    href="https://apps.apple.com/app/last-notes/id6742664033"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ios-button-primary"
@@ -199,11 +199,11 @@ export default function Home() {
               >
                 <div className="feature-icon">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold">Quick Add</h3>
-                <p className="text-secondary-600">Easily log your daily coffee consumption with just a few taps.</p>
+                <h3 className="text-xl font-semibold">Bag Tracking</h3>
+                <p className="text-secondary-600">Log each bag with origin, roast date, and tasting notes—so you know exactly what you&apos;re working with.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -214,11 +214,11 @@ export default function Home() {
               >
                 <div className="feature-icon">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 8v8m-4-5v5M8 8v8m8 0h1a3 3 0 003-3V8a3 3 0 00-3-3h-1m0 0V3m0 2H8m0 0V3m0 2H7a3 3 0 00-3 3v5a3 3 0 003 3h1" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold">Daily Insights</h3>
-                <p className="text-secondary-600">Track your daily coffee intake and view your consumption patterns over time.</p>
+                <h3 className="text-xl font-semibold">Brew Parameters</h3>
+                <p className="text-secondary-600">Record grind size, water temp, ratio, and method for every cup—the details that make the difference.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -229,11 +229,11 @@ export default function Home() {
               >
                 <div className="feature-icon">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold">Weekly Stats</h3>
-                <p className="text-secondary-600">View detailed weekly statistics and track your coffee drinking habits.</p>
+                <h3 className="text-xl font-semibold">Tasting Notes</h3>
+                <p className="text-secondary-600">Capture what worked—flavor, body, finish—and never lose a winning recipe again.</p>
               </motion.div>
             </div>
             <motion.div
@@ -258,55 +258,50 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Social Proof Section */}
+        <section className="ios-section bg-primary-50 py-12 md:py-24" aria-label="What users say about Last Notes">
+          <div className="container-lg px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
+                Loved by
+                <span className="text-gradient"> coffee enthusiasts</span>
+              </h2>
+              <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto text-balance">
+                TestFlight users are already logging their bags and brewing better.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+              <blockquote className="ios-card">
+                <p className="text-secondary-700 italic mb-4">&ldquo;Finally I can remember what I did when a cup turns out great. Game changer for dialing in new beans.&rdquo;</p>
+                <footer className="text-sm text-secondary-600">— TestFlight user</footer>
+              </blockquote>
+              <blockquote className="ios-card">
+                <p className="text-secondary-700 italic mb-4">&ldquo;The bag tracking is exactly what I needed. No more guessing which grind setting worked for that Ethiopian.&rdquo;</p>
+                <footer className="text-sm text-secondary-600">— TestFlight user</footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
-        <section className="ios-section bg-primary-50 py-12 md:py-24">
+        <section className="ios-section bg-white py-12 md:py-24">
           <div className="container-sm text-center px-4 md:px-6">
             <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
               Start your coffee
               <span className="text-gradient"> journey today</span>
             </h2>
             <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
-              Join thousands of coffee enthusiasts who are already using Last Notes to perfect their brew.
+              Join coffee enthusiasts who are already using Last Notes to perfect their brew.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://apps.apple.com/ca/app/last-notes/id6742664033"
+                href="https://apps.apple.com/app/last-notes/id6742664033"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ios-button-primary"
               >
                 Download on App Store
               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="ios-section bg-white py-12 md:py-24" aria-label="Frequently Asked Questions">
-          <div className="container-lg px-4 md:px-6">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
-                Frequently Asked
-                <span className="text-gradient"> Questions</span>
-              </h2>
-            </div>
-            <div className="grid gap-6 md:gap-8 max-w-3xl mx-auto">
-              <div className="ios-card">
-                <h3 className="text-xl font-semibold mb-3">What is Last Notes?</h3>
-                <p className="text-secondary-600">Last Notes is a simple iOS app that helps you track your daily coffee consumption, providing insights into your coffee drinking habits and weekly statistics.</p>
-              </div>
-              <div className="ios-card">
-                <h3 className="text-xl font-semibold mb-3">Is Last Notes free?</h3>
-                <p className="text-secondary-600">Yes, Last Notes is currently available for free through TestFlight beta testing program.</p>
-              </div>
-              <div className="ios-card">
-                <h3 className="text-xl font-semibold mb-3">What features does Last Notes offer?</h3>
-                <p className="text-secondary-600">Last Notes offers quick coffee consumption logging, daily insights into your coffee intake patterns, and detailed weekly statistics to track your coffee drinking habits.</p>
-              </div>
-              <div className="ios-card">
-                <h3 className="text-xl font-semibold mb-3">How do I get started?</h3>
-                <p className="text-secondary-600">Simply download Last Notes through TestFlight, create your account, and start logging your coffee consumption. The app will guide you through the process.</p>
-              </div>
             </div>
           </div>
         </section>
@@ -342,13 +337,43 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FAQ Section - at bottom per UX best practice */}
+        <section id="faq" className="ios-section bg-white py-12 md:py-24" aria-label="Frequently Asked Questions">
+          <div className="container-lg px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
+                Frequently Asked
+                <span className="text-gradient"> Questions</span>
+              </h2>
+            </div>
+            <div className="grid gap-6 md:gap-8 max-w-3xl mx-auto">
+              <div className="ios-card">
+                <h3 className="text-xl font-semibold mb-3">What is Last Notes?</h3>
+                <p className="text-secondary-600">Last Notes is a coffee journal that helps you log each bag, record brew parameters, and capture tasting notes—so you never lose a winning recipe again.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-xl font-semibold mb-3">Is Last Notes free?</h3>
+                <p className="text-secondary-600">Yes, Last Notes is currently available for free through TestFlight beta testing.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-xl font-semibold mb-3">What features does Last Notes offer?</h3>
+                <p className="text-secondary-600">Bag tracking with origin and roast date, detailed brew parameters (grind, temp, ratio, method), and tasting notes so you can repeat what works.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-xl font-semibold mb-3">How do I get started?</h3>
+                <p className="text-secondary-600">Download Last Notes from the App Store, add your first bag, and start logging brews. The app guides you through each step.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="bg-white py-12 px-4 md:px-6">
           <div className="container-lg">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
                 <h3 className="font-semibold mb-4">Last Notes</h3>
-                <p className="text-sm text-secondary-600">Your perfect coffee companion for tracking and improving your coffee journey.</p>
+                <p className="text-sm text-secondary-600">Remember every great cup.</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-4">Legal</h3>
