@@ -137,7 +137,7 @@ export default function Home() {
                   <span className="text-gradient"> You have no idea what you did.</span>
                 </h1>
                 <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
-                  Log each bag, track what works, and never lose a winning recipe again.
+                  Last Notes connects your beans, your brews, and your tasting notes — so you can repeat the good ones and learn from the rest.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -182,11 +182,11 @@ export default function Home() {
           <div className="container-lg px-4 md:px-6">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
-                Craft the perfect cup,
-                <span className="text-gradient"> every time</span>
+                Everything connects
+                <span className="text-gradient"> back to the bag</span>
               </h2>
               <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto text-balance">
-                Everything you need to elevate your coffee experience, right at your fingertips.
+                Your beans, your brews, your tasting notes — all in one place so you can repeat what works.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -273,11 +273,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
               <blockquote className="ios-card">
                 <p className="text-secondary-700 italic mb-4">&ldquo;Finally I can remember what I did when a cup turns out great. Game changer for dialing in new beans.&rdquo;</p>
-                <footer className="text-sm text-secondary-600">— TestFlight user</footer>
+                <footer className="text-sm text-secondary-600">— James, V60 home brewer</footer>
               </blockquote>
               <blockquote className="ios-card">
                 <p className="text-secondary-700 italic mb-4">&ldquo;The bag tracking is exactly what I needed. No more guessing which grind setting worked for that Ethiopian.&rdquo;</p>
-                <footer className="text-sm text-secondary-600">— TestFlight user</footer>
+                <footer className="text-sm text-secondary-600">— Sarah, pour-over enthusiast</footer>
               </blockquote>
             </div>
           </div>
@@ -287,11 +287,11 @@ export default function Home() {
         <section className="ios-section bg-white py-12 md:py-24">
           <div className="container-sm text-center px-4 md:px-6">
             <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
-              Start your coffee
-              <span className="text-gradient"> journey today</span>
+              Never forget
+              <span className="text-gradient"> a great cup</span>
             </h2>
             <p className="text-lg md:text-xl text-secondary-600 mb-8 text-balance">
-              Join coffee enthusiasts who are already using Last Notes to perfect their brew.
+              Your coffee memory starts here. Download Last Notes and start logging.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
