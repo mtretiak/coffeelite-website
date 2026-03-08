@@ -60,7 +60,7 @@ export const metadata: Metadata = {
       { url: '/coffee-icon.png', sizes: '76x76', type: 'image/png' },
     ],
     other: [
-      { rel: 'mask-icon', url: '/coffee-icon.png', color: '#261b18' }
+      { rel: 'mask-icon', url: '/coffee-icon.png', color: '#0a0a0a' }
     ]
   },
   manifest: '/manifest.json',
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
     userScalable: true,
   },
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f5f3f2' },
-    { media: '(prefers-color-scheme: dark)', color: '#261b18' },
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
   ],
   appleWebApp: {
     capable: true,

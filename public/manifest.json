@@ -4,8 +4,8 @@
   "description": "Track your daily coffee consumption effortlessly with Last Notes. Get insights into your coffee habits and monitor weekly stats.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5f3f2",
-  "theme_color": "#261b18",
+  "background_color": "#ffffff",
+  "theme_color": "#0a0a0a",
   "orientation": "portrait",
   "icons": [
     {

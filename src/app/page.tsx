@@ -317,14 +317,14 @@ export default function Home() {
               <div className="flex flex-col gap-6">
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Email Support</h3>
-                  <a href="mailto:coffeeliteapp@gmail.com" className="text-primary-600 hover:text-primary-700">
+                  <a href="mailto:coffeeliteapp@gmail.com" className="text-primary-900 hover:text-primary-950">
                     coffeeliteapp@gmail.com
                   </a>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Follow Us</h3>
                   <div className="flex justify-center gap-4">
-                    <a href="https://www.instagram.com/lastnotesapp/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">
+                    <a href="https://www.instagram.com/lastnotesapp/" target="_blank" rel="noopener noreferrer" className="text-primary-900 hover:text-primary-950">
                       Instagram
                     </a>
                   </div>
