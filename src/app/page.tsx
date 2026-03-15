@@ -46,9 +46,11 @@ export default function Home() {
           "caption": img.alt
         })),
         "featureList": [
-          "Bag tracking with origin and roast date",
-          "Brew parameters (grind, temp, ratio, method)",
-          "Tasting notes to capture winning recipes"
+          "Vision scanning - photograph coffee bags to extract roaster, origin, process, variety, flavors",
+          "Bag tracking with roaster, origin, process, variety, flavors, rating, price, roast date, photos",
+          "Brew tracking - home and café brews with method, device, grind, dose, water, time, temp, rating",
+          "Analytics - flavor profiles, roaster stats, brew history, origin map, price history, peak brew time",
+          "Gear tracking, shareable cards, dark mode, iCloud photo backup"
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -82,7 +84,7 @@ export default function Home() {
             "name": "What features does CoffeeLite offer?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Last Notes offers bag tracking with origin and roast date, brew parameter logging (grind, temp, ratio, method), and tasting notes to capture what worked so you can repeat it."
+              "text": "Last Notes offers vision scanning to read bag labels from a photo, bag tracking (roaster, origin, process, variety, flavors, rating, price, roast date, photos), brew tracking for home and café with location, analytics (flavor profiles, roaster stats, brew history, origin map, price history), plus gear tracking, shareable cards, dark mode, and iCloud photo backup."
             }
           }
         ]
@@ -203,7 +205,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold">Bag Tracking</h3>
-                <p className="text-secondary-600">Log each bag with origin, roast date, and tasting notes—so you know exactly what you&apos;re working with.</p>
+                <p className="text-secondary-600">Capture roaster, origin, process, variety, flavors, rating, price, and roast date. Add up to 3 photos per bag—no more forgetting what you bought.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -217,8 +219,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold">Brew Parameters</h3>
-                <p className="text-secondary-600">Record grind size, water temp, ratio, and method for every cup—the details that make the difference.</p>
+                <h3 className="text-xl font-semibold">Brew Tracking</h3>
+                <p className="text-secondary-600">Home brews: method, device, grind, dose, water, time, temp, rating. Café brews include location—so you know exactly where you had that perfect cup.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -229,11 +231,13 @@ export default function Home() {
               >
                 <div className="feature-icon">
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13v7a2 2 0 01-2 2H7a2 2 0 01-2-2v-7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold">Tasting Notes</h3>
-                <p className="text-secondary-600">Capture what worked—flavor, body, finish—and never lose a winning recipe again.</p>
+                <h3 className="text-xl font-semibold">Vision Scanning</h3>
+                <p className="text-secondary-600">Take a photo of the bag. The app reads the label—roaster, origin, process, variety, flavors—and fills in the details. No typing required.</p>
               </motion.div>
             </div>
             <motion.div
@@ -257,6 +261,148 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+        {/* Vision Scanning Section */}
+        <section className="ios-section bg-primary-50 py-12 md:py-24" aria-label="Vision scanning - scan coffee bag labels">
+          <div className="container-lg px-4 md:px-6">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="order-2 lg:order-1"
+              >
+                <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
+                  Scan the bag.
+                  <span className="text-gradient"> Skip the typing.</span>
+                </h2>
+                <p className="text-lg text-secondary-600 mb-6">
+                  Take a photo of the bag. The app reads the label and pulls out roaster, origin, process, variety, and flavor notes—so you can add a bag in seconds instead of minutes.
+                </p>
+                <p className="text-secondary-600">
+                  Less typing, more brewing. It&apos;s the fastest way to start your coffee journal.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.98 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="order-1 lg:order-2 flex justify-center"
+              >
+                <div className="ios-card max-w-sm w-full aspect-square flex items-center justify-center text-primary-200">
+                  <svg className="w-24 h-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 13v7a2 2 0 01-2 2H7a2 2 0 01-2-2v-7" />
+                  </svg>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Analytics & Insights Section */}
+        <section className="ios-section bg-white py-12 md:py-24" aria-label="Analytics and insights">
+          <div className="container-lg px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-display-sm font-bold mb-6 text-balance">
+                See patterns
+                <span className="text-gradient"> you didn&apos;t know were there.</span>
+              </h2>
+              <p className="text-lg md:text-xl text-secondary-600 max-w-2xl mx-auto text-balance">
+                Your brews tell a story. Last Notes helps you read it.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+              <div className="ios-card">
+                <h3 className="text-lg font-semibold mb-2">Flavor profile explorer</h3>
+                <p className="text-secondary-600 text-sm">Which tasting notes show up most? See your flavor habits at a glance.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-lg font-semibold mb-2">Roaster stats</h3>
+                <p className="text-secondary-600 text-sm">Your favorite roasters, bag counts, ratings, and how much you&apos;ve spent.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-lg font-semibold mb-2">Brew history charts</h3>
+                <p className="text-secondary-600 text-sm">Track brews over time and spot what&apos;s working.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-lg font-semibold mb-2">Origin map</h3>
+                <p className="text-secondary-600 text-sm">Pins across the coffee belt—see where your beans come from.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-lg font-semibold mb-2">Price history</h3>
+                <p className="text-secondary-600 text-sm">Filter by price range and keep tabs on your coffee spend.</p>
+              </div>
+              <div className="ios-card">
+                <h3 className="text-lg font-semibold mb-2">Peak brew time</h3>
+                <p className="text-secondary-600 text-sm">When do you brew the most? Find your perfect coffee rhythm.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Secondary Features */}
+        <section className="ios-section bg-primary-50 py-12 md:py-24" aria-label="More features">
+          <div className="container-lg px-4 md:px-6">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-display-sm font-bold mb-8 text-center text-balance">
+                And a few more things
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <div className="feature-icon shrink-0">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Gear & equipment tracking</h3>
+                    <p className="text-sm text-secondary-600">Log your grinders, brewers, and go-to setup.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="feature-icon shrink-0">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Shareable bag & brew cards</h3>
+                    <p className="text-sm text-secondary-600">Dark and light styles—ready to share.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="feature-icon shrink-0">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Dark mode</h3>
+                    <p className="text-sm text-secondary-600">Easy on the eyes, day or night.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="feature-icon shrink-0">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">iCloud photo backup</h3>
+                    <p className="text-sm text-secondary-600">Your bag photos stay safe and synced.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
         {/* Social Proof Section */}
         <section className="ios-section bg-primary-50 py-12 md:py-24" aria-label="What users say about Last Notes">
@@ -354,7 +500,7 @@ export default function Home() {
               </div>
               <div className="ios-card">
                 <h3 className="text-xl font-semibold mb-3">What features does Last Notes offer?</h3>
-                <p className="text-secondary-600">Bag tracking with origin and roast date, detailed brew parameters (grind, temp, ratio, method), and tasting notes so you can repeat what works.</p>
+                <p className="text-secondary-600">Vision scanning reads bag labels from a photo. Bag tracking captures roaster, origin, process, variety, flavors, rating, price, roast date, and photos. Brew tracking covers home and café (with location). Analytics include flavor profiles, roaster stats, brew history, origin map, and price history. Plus gear tracking, shareable cards, dark mode, and iCloud backup.</p>
               </div>
               <div className="ios-card">
                 <h3 className="text-xl font-semibold mb-3">How do I get started?</h3>
